@@ -1,2 +1,3 @@
 #!/bin/bash
-gcc main.c -o c
+gcc -E main.c > c
+
