@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-  write("_putchar.c")
-    return 0;
+fwrite("_putchar.c");
+return 0;
 }
