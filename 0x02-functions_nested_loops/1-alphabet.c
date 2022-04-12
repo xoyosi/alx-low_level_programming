@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * main - Entry point
  *
@@ -6,7 +7,12 @@
  */
 int main(void)
 {
-for (char c = 'a'; c <= 'z'; c++)
-printf("%c", c);
- printf("\n");
+  char c = 'a';
+  while(c <= 'z')
+    {
+      printf("%c" , c);
+      c++;
+    }
+  printf("\n");
+  return (0);
 }
