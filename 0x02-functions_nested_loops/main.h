@@ -1,4 +1,5 @@
 #include <stdio.h>
-#include <cs50.h>
 #include <string.h>
 #include <ctype.h>
+#include <fcntl.h>
+#include <unistd.h>
