@@ -1,15 +1,9 @@
-#include "holberton.h"
-
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-void print_alphabet(void)
+#include "main.h"
+int main(void)
 {
-char letter;
-for (letter = 'a'; letter <= 'z'; letter++)
-_putchar(letter);
-_putchar('\n');
+char c;
+for(c = 'a'; c <= 'z'; c++)
+putchar(c);
+putchar('\n');
 }
 
