@@ -6,9 +6,7 @@
  */
 int main(void); int print_sign(int n)
 {
-  int n;
-  n = print_sign();
-  if (n > 0)
+if (n > 0)
 {
 putchar('+' + n);
 return (1);
