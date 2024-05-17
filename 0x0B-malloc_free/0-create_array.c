@@ -21,11 +21,11 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 
-	*array = (char *)malloc(sizeof(char) * size);
+	array = (char *)malloc(sizeof(char) * size);
 
 	if (array == NULL)
 	{
-		return (NULL)
+		return (NULL);
 	}
 	
 	for (i = 0; i < size; i++)
@@ -33,5 +33,5 @@ char *create_array(unsigned int size, char c)
 		array[i] = c;
 	}
 
-	return (c);
+	return (array);
 }
