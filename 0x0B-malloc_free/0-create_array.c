@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * create_array - creates an array of chars
@@ -19,7 +19,7 @@ char *create_array(unsigned int size, char c)
 
 	c = malloc(sizeof(char) * size);
 
-	if (c == 0)
+	if (c == NULL)
 	{
 		return (NULL)
 	}
