@@ -64,7 +64,7 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 
-	va_ends(args);
+	va_end(args);
 	printf("\n");
 }
 
