@@ -20,17 +20,17 @@ void print_all(const char * const format, ...)
 
 	while(*format)
 	{
-		if (format == 'c')
+		if (*format == 'c')
 		{
 			c = va_arg(args, int);
 			printf("%c", c);
 		}
-		else if (format == 'i')
+		else if (*format == 'i')
 		{
 			num = va_arg(args, int);
 			printf("%d", num);
 		}
-		else if (format == 's')
+		else if (*format == 's')
 		{
 			s = va_arg(args, char *);
 
@@ -43,7 +43,7 @@ void print_all(const char * const format, ...)
 				printf("(nil)");
 			}
 		}
-		else if (format == 'f')
+		else if (*format == 'f')
 		{
 			d = va_arg(args, double);
 			printf("%f", d);
