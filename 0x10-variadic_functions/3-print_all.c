@@ -20,31 +20,31 @@ void print_all(const char * const format, ...)
 	{
 		if (sep)
 			printf(", ");
-
 		switch (current)
-		case 'c':
-			printf("%c", va_arg(args, int));
-			sep = 1;
-			break;
-		case 'i':
-			printf("%d", va_arg(args, int));
-			sep = 1;
-			break;
-		case 'f':
-			printf("%f", va_arg(args, double));
-			sep = 1;
-			break;
-		case 's':
-			str = va_arg(args, char *);
-			if (str == NULL)
-				str = "(nil)";
-			printf("%s", str);
-			sep = 1;
-			break;
-		default:
-			sep = 0;
-			break;
-
+		{
+			case 'c':
+				printf("%c", va_arg(args, int));
+				sep = 1;
+				break;
+			case 'i':
+				printf("%d", va_arg(args, int));
+				sep = 1;
+				break;
+			case 'f':
+				printf("%f", va_arg(args, double));
+				sep = 1;
+				break;
+			case 's':
+				str = va_arg(args, char *);
+				if (str == NULL)
+					str = "(nil)";
+				printf("%s", str);
+				sep = 1;
+				break;
+			default:
+				sep = 0;
+				break;
+		}
 		i++;
 	}
 	va_end(args);
